@@ -7,7 +7,6 @@ import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -18,15 +17,6 @@ public class ProductController {
 
     @Autowired
     private final ProductService productService;
-
-    @GetMapping("/saludo")
-    public Map<Long, Double> saludo(){
-        Map<Long, Double> result = new HashMap<>();
-        result.put(1L,1.0);
-        result.put(2L,10.4);
-        result.put(3L,14.5);
-        return result;
-    }
 
     @GetMapping
     public List<Product> getAll(){
