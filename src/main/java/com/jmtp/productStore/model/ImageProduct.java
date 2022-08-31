@@ -12,7 +12,7 @@ import org.bson.types.Binary;
 @Builder
 public class ImageProduct {
 
-    private String contentType;
-    private Binary contentData;
+    private String contentType=null;
+    private Binary contentData=null;
 
 }
