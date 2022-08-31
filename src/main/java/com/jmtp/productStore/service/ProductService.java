@@ -8,13 +8,10 @@ import com.jmtp.productStore.responce.ProductResponse;
 import lombok.AllArgsConstructor;
 import org.bson.BsonBinarySubType;
 import org.bson.types.Binary;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
@@ -53,9 +50,11 @@ public class ProductService {
      * @throws IOException
      */
     public Product save(ProductRequest prod_request) throws IOException {
-        if( prod_request.getId() == null | prod_request.getId() == "" ) {
+
+        Product product;
+        if( prod_request.getId() == null | prod_request.getId().isEmpty() ) {
             //New Product
-            Product product = Product.builder()
+            product = Product.builder()
                     .name(prod_request.getName())
                     .price(prod_request.getPrice())
                     .stock(prod_request.getStock())
@@ -66,10 +65,9 @@ public class ProductService {
                                     BsonBinarySubType.BINARY,
                                     prod_request.getImage().getBytes())))
                     .build();
-            return productRepository.save(product);
         }else{
             //Update prooduct
-            Product product = productRepository.findById(prod_request.getId()).get();
+            product = productRepository.findById(prod_request.getId()).get();
             if(prod_request.getName() != null & !prod_request.getName().isEmpty()){
                 product.setName(prod_request.getName());
             }
@@ -89,8 +87,8 @@ public class ProductService {
                                 BsonBinarySubType.BINARY,
                                 prod_request.getImage().getBytes())));
             }
-            return productRepository.save(product);
         }
+        return productRepository.save(product);
     }
 
     public Boolean delete(String id){

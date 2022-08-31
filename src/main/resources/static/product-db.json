@@ -1,0 +1,138 @@
+[
+  {
+    "id": "1",
+    "name": "Cami Tommy",
+    "price": 129.0,
+    "stock": 10,
+    "category": "camisas",
+    "image_path": "/img/camisa_tommy_MW0MW09686.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Camisa Tommy soft micro print",
+    "price": 150,
+    "stock": 10,
+    "category": "camisas",
+    "image_path": "/img/camisa_tommy_soft_micro_print.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Gorra Adidas azul",
+    "price": 80,
+    "stock": 20,
+    "category": "gorras",
+    "image_path": "/img/Gorra_Beisbol_Adicolor_Archive_Azul_.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Gorra Adidas color plomo",
+    "price": 90,
+    "stock": 20,
+    "category": "gorras",
+    "image_path": "/img/Gorra_Beisbol_Adicolor_Archive_Plomo.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Gorra Adidas camo amarilla",
+    "price": 95,
+    "stock": 15,
+    "category": "gorras",
+    "image_path": "/img/Gorra_Beisbol_Camo_Amarillo.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Pantalón Adidas Sportwear future",
+    "price": 170,
+    "stock": 10,
+    "category": "pantalones",
+    "image_path": "/img/pantalon_adidas_sportswear_future.jpg"
+  },
+  {
+    "id": "7",
+    "name": "Pantalón Adidas camuflaje",
+    "price": 180,
+    "stock": 10,
+    "category": "pantalones",
+    "image_path": "/img/pantalon_camuflaje.jpg"
+  },
+  {
+    "id": "8",
+    "name": "Pantalón Adidas Sereno",
+    "price": 170,
+    "stock": 10,
+    "category": "pantalones",
+    "image_path": "/img/pantalon_entrenamiento_sereno.jpg"
+  },
+  {
+    "id": "9",
+    "name": "Polo Adidas negro 3 tiras",
+    "price": 120,
+    "stock": 15,
+    "category": "polos",
+    "image_path": "/img/polo_designed_2_move_3_tiras_negro.jpg"
+  },
+  {
+    "id": "10",
+    "name": "Polo Adidas Serie Camo",
+    "price": 120,
+    "stock": 15,
+    "category": "polos",
+    "image_path": "/img/polo_estampado_integral_camo_series.jpg"
+  },
+  {
+    "id": "11",
+    "name": "Polo runner negro",
+    "price": 115,
+    "stock": 15,
+    "category": "polos",
+    "image_path": "/img/polo_runner_negro.jpg"
+  },
+  {
+    "id": "12",
+    "name": "Short Adidas 3 tiras",
+    "price": 95,
+    "stock": 20,
+    "category": "shorts",
+    "image_path": "/img/shorts_3_tiras.jpg"
+  },
+  {
+    "id": "13",
+    "name": "Short Adidas condivo",
+    "price": 95,
+    "stock": 15,
+    "category": "shorts",
+    "image_path": "/img/shorts_condivo.jpg"
+  },
+  {
+    "id": "14",
+    "name": "Short Adidas Tastigo",
+    "price": 95,
+    "stock": 15,
+    "category": "shorts",
+    "image_path": "/img/shorts_tastigo.jpg"
+  },
+  {
+    "id": "15",
+    "name": "Zapatillas Adidas retropy verdes",
+    "price": 230,
+    "stock": 10,
+    "category": "zapatillas",
+    "image_path": "/img/zapatilla_retropy_verde.jpg"
+  },
+  {
+    "id": "16",
+    "name": "Zapatillas Adidas rosadas",
+    "price": 230,
+    "stock": 10,
+    "category": "zapatillas",
+    "image_path": "/img/zapatilla_rozada.jpg"
+  },
+  {
+    "id": "16",
+    "name": "Zapatillas Adidas runner Terrex",
+    "price": 390,
+    "stock": 10,
+    "category": "zapatillas",
+    "image_path": "/img/zapatilla_running_terrex.jpg"
+  }
+]
