@@ -40,7 +40,7 @@ public class ProductController {
             result.put("HostCanonicalHostName", InetAddress.getLocalHost().getCanonicalHostName());
             result.put("Host", request.getHeader("host"));
             result.put("PathInfo",request.getRequestURI());
-            result.put("Protocol", request.getProtocol().split("/")[0]);
+            result.put("Protocol", request.getScheme());
 
         } catch (UnknownHostException e) {
             throw new RuntimeException(e);
