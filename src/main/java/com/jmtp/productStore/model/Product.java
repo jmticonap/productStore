@@ -5,29 +5,24 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
-import java.util.List;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Entity(name="product")
+@Document(collection = "product")
 public class Product {
 
     @Id
-    @SequenceGenerator(
-            name = "product_id_sequence",
-            sequenceName = "product_id_sequence"
-    )
-    @GeneratedValue(
-            strategy = GenerationType.SEQUENCE,
-            generator = "product_id_sequence"
-    )
-    private Long id;
+    private String id;
     private String name;
     private Double price;
+    @Transient
     private String imagePath;
+    private ImageProduct image;
     private Double stock;
     private String category;
 

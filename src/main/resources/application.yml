@@ -1,21 +1,17 @@
 server:
   port: 8090
 
+
 spring:
-  application:
-    name: productStore
-  datasource:
-    password: password
-    url: jdbc:postgresql://localhost:5432/product_store
-    username: jmtp
-  jpa:
-    hibernate:
-      ddl-auto: create-drop
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-        format_sql: true
-    show-sql: true
+  data:
+    mongodb:
+      uri: mongodb+srv://jmtpdev:jmtpdev@testcluster.uosjo.mongodb.net/store_kardex?retryWrites=true&w=majority
+  servlet:
+    multipart:
+      max-file-size: 2MB
+      max-request-size: 2MB
+      enabled: true
+
 
 springdoc:
   api-docs:
