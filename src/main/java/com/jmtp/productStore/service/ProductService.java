@@ -135,7 +135,7 @@ public class ProductService {
     public static String makeImagePath( Product product, HttpServletRequest request ){
         //https://jmtpproductstore.herokuapp.com/api/v1/product/630ecd17ffe5ad336fae0d9c/image
         return String.format(
-                "%s://%s/api/v1/product/%s/image",
+                "%s://%s/api/v1/product/image/%s",
                 request.getScheme(),
                 request.getHeader("host"),
                 product.getId() );
